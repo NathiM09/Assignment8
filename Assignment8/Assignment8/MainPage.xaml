@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Assignment8.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="Gray" Padding="24" CornerRadius="0">
+            <Label Text="{Binding Shop.ShopName}" TextColor="White"  FontSize="48" HorizontalTextAlignment="center"/>
+        </Frame>
+        <Label Text="{Binding Shop.ShopAddress}" HorizontalOptions="Center"/>
+        <Label Text="{Binding Shop.ContactDetails}" HorizontalOptions="Center"/>
+
+        <Label Text="" x:Name="labelname"/>
+
+        <Entry Placeholder="Name" Text="{Binding Name}"/>
+        <Entry Placeholder="Gender" Text="{Binding Gender}" />
+        <Entry Placeholder="T-shirt Size" Text="{Binding Tshirt size} "/>
+        <Entry Placeholder="Date of the order" Text="{Binding Date of the order}"/>
+        <Entry Placeholder="T-shirt color"  Text="{Binding Tshirt color}"/>
+        <Entry Placeholder="Shipping Address" Text="{Binding Shipping Address}"/>
+        <Button Text="Click here to proceed to checkout" Clicked="Button_Clicked" />
+
+    </StackLayout>
+
+</ContentPage>
